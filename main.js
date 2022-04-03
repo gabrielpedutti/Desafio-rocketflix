@@ -18,7 +18,7 @@ botaoEncontrarFilme.addEventListener("click", () => {
     const data = response.data
     const capa = IMG_URL + data.poster_path;
 
-    if (capa == "") {
+    if (capa == null) {
         capaFilme.src = "./assets/unavailable.jpg"
     } else {
         capaFilme.src = capa
